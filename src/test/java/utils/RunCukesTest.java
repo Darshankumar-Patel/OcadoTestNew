@@ -7,7 +7,7 @@ import gherkin.formatter.model.Feature;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/search.feature",glue = {"stepDefs"})
+@CucumberOptions(features = "src/test/resources/search.feature",glue = {"stepDefs"}, plugin = "json:target/cucumber.json")
 
 public class RunCukesTest {
 
